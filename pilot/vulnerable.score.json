@@ -1,0 +1,79 @@
+{
+  "candidate": "vulnerable.c",
+  "compiler": "clang",
+  "build_ok": true,
+  "benign": {
+    "correct": 4,
+    "total": 4,
+    "rate": 1.0,
+    "details": [
+      {
+        "input": "valid_1.bin",
+        "baseline_rc": 0,
+        "candidate_rc": 0,
+        "match": true,
+        "asan": false
+      },
+      {
+        "input": "valid_2.bin",
+        "baseline_rc": 0,
+        "candidate_rc": 0,
+        "match": true,
+        "asan": false
+      },
+      {
+        "input": "valid_3.bin",
+        "baseline_rc": 0,
+        "candidate_rc": 0,
+        "match": true,
+        "asan": false
+      },
+      {
+        "input": "valid_4.bin",
+        "baseline_rc": 0,
+        "candidate_rc": 0,
+        "match": true,
+        "asan": false
+      }
+    ]
+  },
+  "exploits": {
+    "suppressed": 1,
+    "total": 5,
+    "rate": 0.2,
+    "details": [
+      {
+        "input": "exploit_1.bin",
+        "candidate_rc": 1,
+        "suppressed": false,
+        "asan_excerpt": "=================================================================\n==66454==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x6020000000a0 at pc 0x000100e8b284 bp 0x00016f8930f0 sp 0x00016f892"
+      },
+      {
+        "input": "exploit_2.bin",
+        "candidate_rc": 1,
+        "suppressed": false,
+        "asan_excerpt": "=================================================================\n==66457==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x60200000009d at pc 0x00010349b284 bp 0x00016d0630f0 sp 0x00016d062"
+      },
+      {
+        "input": "exploit_3.bin",
+        "candidate_rc": 1,
+        "suppressed": false,
+        "asan_excerpt": "=================================================================\n==66459==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x602000000094 at pc 0x0001042f130c bp 0x00016bb0f0f0 sp 0x00016bb0f"
+      },
+      {
+        "input": "exploit_4.bin",
+        "candidate_rc": 0,
+        "suppressed": true,
+        "asan_excerpt": ""
+      },
+      {
+        "input": "exploit_5.bin",
+        "candidate_rc": 1,
+        "suppressed": false,
+        "asan_excerpt": "=================================================================\n==66462==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x6020000000b4 at pc 0x000102cc130c bp 0x00016d13f0f0 sp 0x00016d13f"
+      }
+    ]
+  },
+  "reward": 0.52,
+  "hard_fail": []
+}
