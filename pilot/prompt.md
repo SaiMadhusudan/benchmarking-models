@@ -1,4 +1,4 @@
-# Prompt — paste this into Claude.ai / ChatGPT / Codex-in-VS-Code
+# Prompt
 
 Copy everything between the lines below (including the C source at the end) into a fresh chat. Do not include this header line.
 

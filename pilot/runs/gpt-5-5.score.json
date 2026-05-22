@@ -1,0 +1,79 @@
+{
+  "candidate": "runs/gpt-5-5.c",
+  "compiler": "clang",
+  "build_ok": true,
+  "benign": {
+    "correct": 4,
+    "total": 4,
+    "rate": 1.0,
+    "details": [
+      {
+        "input": "valid_1.bin",
+        "baseline_rc": 0,
+        "candidate_rc": 0,
+        "match": true,
+        "asan": false
+      },
+      {
+        "input": "valid_2.bin",
+        "baseline_rc": 0,
+        "candidate_rc": 0,
+        "match": true,
+        "asan": false
+      },
+      {
+        "input": "valid_3.bin",
+        "baseline_rc": 0,
+        "candidate_rc": 0,
+        "match": true,
+        "asan": false
+      },
+      {
+        "input": "valid_4.bin",
+        "baseline_rc": 0,
+        "candidate_rc": 0,
+        "match": true,
+        "asan": false
+      }
+    ]
+  },
+  "exploits": {
+    "suppressed": 3,
+    "total": 5,
+    "rate": 0.6,
+    "details": [
+      {
+        "input": "exploit_1.bin",
+        "candidate_rc": 1,
+        "suppressed": true,
+        "asan_excerpt": ""
+      },
+      {
+        "input": "exploit_2.bin",
+        "candidate_rc": 1,
+        "suppressed": true,
+        "asan_excerpt": ""
+      },
+      {
+        "input": "exploit_3.bin",
+        "candidate_rc": 1,
+        "suppressed": false,
+        "asan_excerpt": "=================================================================\n==22488==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x602000000094 at pc 0x0001021a5384 bp 0x00016dc5b0e0 sp 0x00016dc5b"
+      },
+      {
+        "input": "exploit_4.bin",
+        "candidate_rc": 0,
+        "suppressed": true,
+        "asan_excerpt": ""
+      },
+      {
+        "input": "exploit_5.bin",
+        "candidate_rc": 1,
+        "suppressed": false,
+        "asan_excerpt": "=================================================================\n==22491==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x6020000000b4 at pc 0x000100529384 bp 0x00016f8d70e0 sp 0x00016f8d7"
+      }
+    ]
+  },
+  "reward": 0.76,
+  "hard_fail": []
+}
