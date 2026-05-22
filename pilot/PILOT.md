@@ -1,6 +1,7 @@
 # Tiny Pilot
 
-A one-hour proof-of-calibration for the [proposal](../Task.MD). No Docker, no API keys, no FrontierSWE harness — just a small vulnerable C file, a corpus, a scoring script, and a chatbot.
+**Repo:** https://github.com/SaiMadhusudan/benchmarking-models
+
 
 ## What this is
 

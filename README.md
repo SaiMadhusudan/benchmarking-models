@@ -3,6 +3,7 @@
 A new task for [FrontierSWE](https://www.frontierswe.com) in a category they don't currently have: **defensive security**. The agent is given a real, vulnerable C parser and must produce a class-level hardening patch that suppresses held-out exploits without breaking held-out benign inputs, within a performance budget.
 
 **Author:** Sai Madhusudan Gunda — gundasaimadhusudan@gmail.com
+**Repo:** https://github.com/SaiMadhusudan/benchmarking-models
 
 ---
 
